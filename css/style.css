@@ -1,0 +1,101 @@
+/* caveat-regular - latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/caveat-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Caveat Regular'), local('Caveat-Regular'),
+       url('../fonts/caveat-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/caveat-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/caveat-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/caveat-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/caveat-v5-latin-regular.svg#Caveat') format('svg'); /* Legacy iOS */
+}
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif
+}
+.bod{
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 657px;
+    width: 100%
+}
+.bod::before{
+    content: "";
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.75
+}
+.bod img{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+.bod p{
+    position: absolute;
+    color: #000;
+    text-transform: capitalize;
+    top: 150px;
+    left: 450px;
+    font-family: 'Caveat', cursive;
+    font-size: 150px
+}
+.bod p:last-of-type{
+    color: #fff;
+    top: 144px;
+    left: 449px;
+}
+.bod .searchBox{
+    position: absolute;
+    top: 425px;
+    left: 400px
+}
+.bod .searchBox input{
+    background-color: #fff;
+    opacity: 0.5;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    padding: 10px
+}
+.bod .searchBox select{
+    position: absolute;
+    height: 40px;
+    width: 135px;
+    background-color: #2b2b2b;
+    opacity: 0.3;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    right: 75px;
+    top: 0;
+}
+.bod .searchBox .fas{
+    position: absolute;
+    font-size: 25px;
+    top: 6px;
+    right: 20px;
+    cursor: pointer
+}
+.bod button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
